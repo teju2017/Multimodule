@@ -1,0 +1,17 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.teju.multimodule</groupId>
+  <artifactId>tejasone</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Multimodule</name>
+  <description>This is to test the build and packaging of multimodule project	</description>
+  <packaging>pom</packaging>
+   <properties>
+      <maven.compiler.source>11</maven.compiler.source>
+      <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+  <modules>
+     <module>../tejastwo</module>
+     <module>../tejasthree</module>
+  </modules>
+</project>
