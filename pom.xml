@@ -1,0 +1,29 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.tejas.multimodule2</groupId>
+  <artifactId>tejastwo</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>TejastwoProject</name>
+  <description>Tejas two multi module project</description>
+  <packaging>jar</packaging>
+  <!--  
+         In the multiple module dependencies, make sure that the below dependency mentioned is compiled and 
+         jar is created and placed in the M2 for the below to work.
+         The tejas3 module should be compiled and jar should be created for tejastwo to execute
+         successfully
+   -->
+  
+  <dependencies>
+      <dependency>
+            <groupId>com.tejas3.multimodule</groupId>
+            <artifactId>tejasthree</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+      </dependency> 
+  </dependencies>
+  
+  
+   <properties>
+      <maven.compiler.source>11</maven.compiler.source>
+      <maven.compiler.target>11</maven.compiler.target>
+  </properties>
+</project>
